@@ -1,84 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BMW M Series | Luxury on Wheels</title>
+  <meta charset="UTF-8" />
+  <title>BMW Sports Showroom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-
-    header {
-      background: url('https://source.unsplash.com/1600x800/?bmw,luxurycar') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 4rem;
-      background: rgba(0,0,0,0.6);
-      padding: 1rem 2rem;
-      border-radius: 10px;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      text-align: center;
-      background-color: #1a1a1a;
-    }
-
-    .btn {
-      margin-top: 1.5rem;
-      padding: 0.9rem 2rem;
-      font-size: 1.1rem;
-      background: #007aff;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #0051a8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #000;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Experience the Power of BMW</h1>
+  <nav>
+    <div class="logo">BMW Sports</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#models">Models</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div class="header-content">
+      <h1>Unleash the Beast</h1>
+      <p>The Ultimate Driving Machine - BMW M Series</p>
+      <a href="#models" class="btn">Explore Models</a>
+    </div>
   </header>
 
-  <section>
-    <h2>BMW M Series</h2>
-    <p>
-      Unmatched performance. Legendary engineering. Drive the future with BMW's M Series.
-    </p>
-    <button class="btn">Book a Test Drive</button>
+  <section id="models">
+    <h2>Popular Sports Models</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="https://source.unsplash.com/400x250/?bmw,m4" alt="BMW M4">
+        <h3>BMW M4 Coupe</h3>
+        <p>High performance with stunning style and power.</p>
+      </div>
+      <div class="car">
+        <img src="https://source.unsplash.com/400x250/?bmw,m8" alt="BMW M8">
+        <h3>BMW M8 Competition</h3>
+        <p>The king of performance sedans and coupes.</p>
+      </div>
+      <div class="car">
+        <img src="https://source.unsplash.com/400x250/?bmw,sports" alt="BMW Z4">
+        <h3>BMW Z4 Roadster</h3>
+        <p>Convertibles never looked this exciting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Why Choose BMW?</h2>
+    <ul class="features-list">
+      <li>🏁 Motorsport Heritage</li>
+      <li>⚙️ TwinPower Turbo Engines</li>
+      <li>🧠 Intelligent Drive Systems</li>
+      <li>🎯 Precision Handling & Control</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Book a Test Drive</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 BMW by Sameer. All rights reserved.
+    <p>&copy; 2025 BMW Sports Showroom. Powered by Sameer.</p>
   </footer>
 
 </body>
