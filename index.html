@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BMW Tuning Showroom</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW Sports Showroom</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      background: url('https://i.imgur.com/OT2eVRg.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 100px;
+      background-size: cover;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .hero a {
+      background-color: #e60000;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero a:hover {
+      background-color: #b30000;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <div class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>We make the <span>best</span><br>version of BMW</h1>
-      <p>If you dream of an exclusive car, we can turn it into a unique ride.<br>We realise your vehicle's potential with perfection.</p>
-      <a href="#" class="btn">View Projects</a>
+    <div class="navbar">
+      <strong>BMW Showroom</strong>
     </div>
+    <h1>We make the <span style="color: #e60000;">best</span> version of BMW</h1>
+    <p>If you dream of an exclusive car, we can turn it into a unique drive. We realize your vehicle’s top potential.</p>
+    <a href="#">View Projects</a>
   </div>
 </body>
 </html>
